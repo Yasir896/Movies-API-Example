@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="add_movies_to_db">Add Movies to DB</string>
+    <string name="search_for_movies">Search for Movies</string>
+    <string name="search_movies">Search Movies</string>
+    <string name="search_actor">Search for Actor</string>
+    <string name="retrieve_movie">Retrieve Movie</string>
+    <string name="save_movie_to_db">Save Movie to Database</string>
+    <string name="search">Search</string>
+    <string name="enter_actor_name">Enter Actor\'s Name</string>
+
+</resources>

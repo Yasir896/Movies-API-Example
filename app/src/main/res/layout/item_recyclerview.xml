@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Title:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/titleTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Year:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/yearTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Rated:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/ratingTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Released:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/releasedTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Runtime:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/runtimeTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Genre:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/genreTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Director:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/directorTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Writer:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/writerTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Actors:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/actorsTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Plot:"
+                style="@style/title_textview"/>
+
+            <TextView
+                android:id="@+id/plotTv"
+                style="@style/movie_info_textview"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

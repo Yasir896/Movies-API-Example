@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:id="@+id/parentll"
+    tools:context=".presentation.activities.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addToDbBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/groupsbuttons"
+        android:text="@string/add_movies_to_db"
+        android:background="@drawable/save_button_background"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/groupsbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addToDbBtn">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/searchMovieBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_button_background"
+            android:textColor="@color/white"
+            android:text="@string/search_for_movies"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/searchActorBtn"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparant_button_background"
+            android:textColor="@color/blue"
+            android:text="@string/search_actor"/>
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchHereBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/groupsbuttons"
+        android:background="@drawable/search_button_background"
+        android:textColor="@color/white"
+        android:text="@string/search_movies"/>
+
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/searchMovieEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Movie Title"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/searchHereBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:background="@drawable/edit_text_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recycler"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/searchMovieEt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_weight="1"
+        tools:listitem="@layout/item_recyclerview"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
